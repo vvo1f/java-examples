@@ -9,7 +9,7 @@ nl                          = \n|\r|\r\n
 intNumber                   = [1-9][0-9]*
 singedInteger               = ("+"|"-")?[0-9]*
 floatingPointNumber         = ("+"|"-")?[1-9][0-9]*"."[0-9]|"."[0-9]*|0"."[0-9]*
-stringStartedWithSA         == (SA|sa)([a-z]|[A-Z])
+stringStartedWithSA         = (SA|sa)[a-z]*
 
 
 %%
@@ -20,7 +20,7 @@ stringStartedWithSA         == (SA|sa)([a-z]|[A-Z])
 {intNumber}                 {System.out.println("Number: " +yytext());}
 {singedInteger}             {System.out.println("signed Integer: " +yytext());}
 {floatingPointNumber}       {System.out.println("FP Number: " +yytext());}
-{stringStartedWithSA}       {System.out.println("String starting with SA: " +  yytext() + "repeated: " + yylength());}
+{stringStartedWithSA}       {System.out.println("String starting with SA: " +  yytext() + " length: " + yylength());}
 
 
 "+"                         {System.out.println("PLUS");}

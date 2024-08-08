@@ -8,7 +8,7 @@
 %unicode
 
 
-nl = \n\r|\r\n
+nl = \n|\r|\r\n
 
 letter = [^\n\r\\/:*?\"->|0-9]
 digit = [0-9]

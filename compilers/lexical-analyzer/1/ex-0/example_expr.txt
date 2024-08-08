@@ -10,3 +10,5 @@ pippo
 -2
 
 salar
+SAlar
+saLAR
