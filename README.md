@@ -1,9 +1,3 @@
 # java-examples
 
-# To execute files
-
-### $ jflex <file-name>.jflex
-
-### $ javac <class-name>.java
-
-### $ java <class-name> <file-name-1> <file-name-2> ...
+Couple of Java examples grouped by context is provided in this repo. I hope they could be useful for you :)

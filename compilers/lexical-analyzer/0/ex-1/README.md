@@ -1,0 +1,1 @@
+## Write a scanner that receives even number of words (at least 4). Each word is pseciated by a * or a -. A word is a repetition of uppercase letters (at least 5).
